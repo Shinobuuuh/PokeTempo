@@ -1,0 +1,4 @@
+.config/
+node_modules/
+.bash_history
+.node_repl_history
