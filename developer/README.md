@@ -44,9 +44,9 @@ O objetivo é criar uma aplicação web seguindo os seguintes critérios:
 - No topo da página procure e clique no botão de "Sign In";
 - Clique no link "Create an Account";
 - Entre com as suas credenciais e crie um novo acesso, para que possa gerar um `APPID`, na plataforma;
-- Quando estiver logado, procure e clique no botão "API Keys";
-- Ao ser direcionado para a próxima página visualize um pequeno formulário chamado "Create Key";
-- No input "Name", coloque o nome que achar mais conveniente, por exemplo: "Default";
+- Quanto estiver logado entre na URL https://home.openweathermap.org/api_keys;
+- Visualize um pequeno formulário chamado "Create Key";
+- No input "API key name", coloque o nome que achar mais conveniente, por exemplo: "Default";
 - Em seguida clique no botão "Generate";
 - Ao lado do formulário uma "Key" (chave), será gerada com o nome que você informou no passo anterior, essa chave é o que a plataforma chama de `APPID` e será utilizada ao realizarmos as requisições Rest para as API(s) da plataforma.
 
