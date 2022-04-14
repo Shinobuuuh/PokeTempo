@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "64feb37b-7415-476d-8cd3-8e0ed1144418": {
+      "ProjectGuid": "64feb37b-7415-476d-8cd3-8e0ed1144418",
+      "DisplayName": "Desáfio Pokémon",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

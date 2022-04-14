@@ -24,3 +24,29 @@ D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\refint\Desáfio Poké
 D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.pdb
 D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.genruntimeconfig.cache
 D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\ref\Desáfio Pokémon.dll
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.AssemblyInfoInputs.cache
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.AssemblyInfo.cs
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.csproj.CoreCompileInputs.cache
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.MvcApplicationPartsAssemblyInfo.cache
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.RazorAssemblyInfo.cache
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.RazorAssemblyInfo.cs
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\appsettings.Development.json
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\appsettings.json
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Desáfio Pokémon.staticwebassets.runtime.json
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Desáfio Pokémon.exe
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Desáfio Pokémon.deps.json
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Desáfio Pokémon.runtimeconfig.json
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Desáfio Pokémon.dll
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\ref\Desáfio Pokémon.dll
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Desáfio Pokémon.pdb
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.csproj.AssemblyReference.cache
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\staticwebassets.build.json
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\staticwebassets.development.json
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\scopedcss\bundle\Desáfio Pokémon.styles.css
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\scopedcss\projectbundle\Desáfio Pokémon.bundle.scp.css
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.dll
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\ref\Desáfio Pokémon.dll
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.pdb
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.genruntimeconfig.cache

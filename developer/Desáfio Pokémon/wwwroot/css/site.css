@@ -16,10 +16,26 @@ html {
 body {
     margin-top: 5%;
     margin-bottom: 60px;
+}
+
+.background-fundo {
     background-image: url(../images/Background_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/*div{
 
 }
 
+#nome-id{
+
+}
+
+.nome-da-classe{
+
+}*/
 
 header {
     width: 100%;
@@ -27,13 +43,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../images/pikachuRunning.gif);
-    background-repeat: no-repeat;
-    background-size: 4%;
-    background-position: right;
-    opacity: 40%;
-    border: 300px;
-    background-color: #0ebbc166;
+    background-color: #0ebbc100;
 
     
 }
@@ -47,3 +57,7 @@ footer {
     left: 0;
 }
 
+/*background-image: url(../images/pikachuRunning.gif);
+background-repeat: no-repeat;
+background-size: 4%;
+background-position: right;*/
