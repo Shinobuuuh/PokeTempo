@@ -1,0 +1,26 @@
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\bin\Debug\net6.0\appsettings.Development.json
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\bin\Debug\net6.0\appsettings.json
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\bin\Debug\net6.0\Desáfio Pokémon.staticwebassets.runtime.json
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\bin\Debug\net6.0\Desáfio Pokémon.exe
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\bin\Debug\net6.0\Desáfio Pokémon.deps.json
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\bin\Debug\net6.0\Desáfio Pokémon.runtimeconfig.json
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\bin\Debug\net6.0\Desáfio Pokémon.dll
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\bin\Debug\net6.0\Desáfio Pokémon.pdb
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.csproj.AssemblyReference.cache
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.AssemblyInfoInputs.cache
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.AssemblyInfo.cs
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.csproj.CoreCompileInputs.cache
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.MvcApplicationPartsAssemblyInfo.cache
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.RazorAssemblyInfo.cache
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.RazorAssemblyInfo.cs
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\staticwebassets.build.json
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\staticwebassets.development.json
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\scopedcss\bundle\Desáfio Pokémon.styles.css
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\scopedcss\projectbundle\Desáfio Pokémon.bundle.scp.css
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.dll
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\refint\Desáfio Pokémon.dll
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.pdb
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.genruntimeconfig.cache
+D:\C#\Desáfio Pokémon\Desáfio Pokémon\obj\Debug\net6.0\ref\Desáfio Pokémon.dll
