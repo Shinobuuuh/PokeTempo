@@ -16,12 +16,35 @@ namespace Desáfio_Pokémon.Controllers
         public IActionResult Index()
         {
             return View();
-        }
+        }   
 
-        public IActionResult Privacy()
+        public IActionResult SearchCity()
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult SearchCity(string city)
+        {
+            return Content($"Cidade Pesquisada : {city}");
+        }
+
+
+
+
+
+
+        public JsonResult GetWeather()
+        {
+            Weather weath = new Weather();
+            return Json(weath.getWeatherForcast(), new Newtonsoft.Json.JsonSerializerSettings());
+
+        }
+
+
+
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

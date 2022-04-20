@@ -1,24 +1,4 @@
-﻿@*@{
-    ViewData["Title"] = "Home Page";
-}
-<div class="text-center">
-    <h1 class="display-4">Seja bem vindo ao mundo Pokémon!</h1>
-    <h2>Vamos começar!</h2>
-</div>
-
-<br />
-<br />
-<br />
-
-<a href="@Url.Action("SearchCity","Home")" class="h-50">
-    <input type="submit" id="size-btn-start" class="btn style-btn-background offset-4 col-4" value="S T A R T "/>
-</a>
-
-*@
-
-
-
-
+﻿@*
 @{
     ViewBag.Title = "Weather Or Not";
 }
@@ -35,7 +15,7 @@
 <script>
     var weather = Object();
     $(document).ready(function () {
-            $.get("@Url.Action("GetWeather", "Home")", function (response) {
+            $.get("@Url.Action("Pesquisar", "Pesquisa")", function (response) {
                 //response
                 console.log(response);
                 weather = ko.mapping.fromJS(response);  //populate the weather object
@@ -45,3 +25,4 @@
     });
 
 </script>
+*@

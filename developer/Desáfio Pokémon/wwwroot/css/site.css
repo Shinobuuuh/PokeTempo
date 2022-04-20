@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    margin-top: 5%;
+    margin-top: 0%;
     margin-bottom: 60px;
 }
 
@@ -23,6 +23,24 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+}
+
+
+.style-btn-background {
+    background-color: #f33535d9;
+    border: none;
+    border-radius: 2em;
+}
+
+#size-btn-start {
+    height: 2em;
+    color: #ffffff;
+    text-align: center;
+    font-size: 4em;
+}
+
+.p-6{
+    padding-top: 6em;
 }
 
 /*div{
