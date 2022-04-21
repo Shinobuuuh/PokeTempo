@@ -82,3 +82,9 @@ D:\Projetos\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Micro
 D:\Projetos\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Nancy.dll
 D:\Projetos\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Projetos\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.csproj.CopyComplete
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Nancy.dll
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Projetos\TESTES E EXERCICIOS\Murillim\pokemon-challenge\developer\Desáfio Pokémon\obj\Debug\net6.0\Desáfio Pokémon.csproj.CopyComplete

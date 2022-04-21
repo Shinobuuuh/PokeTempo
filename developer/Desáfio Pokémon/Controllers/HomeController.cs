@@ -1,4 +1,5 @@
 ﻿using Desáfio_Pokémon.Models;
+using Desáfio_Pokémon.Models.Pesquisa;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -23,15 +24,18 @@ namespace Desáfio_Pokémon.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult SearchCity(string city)
+        //public IActionResult SearchCity(string city)
+        //{
+        //    return Content($"Cidade Pesquisada : {city}");
+        //}
+        public IActionResult Obter(string city)
         {
-            return Content($"Cidade Pesquisada : {city}");
+            var api = new ApiTempo();
+
+            var resposta = api.getTemp(city);
+
+            return View(@"\Views\Home\Obter.cshtml", resposta.main.temp.ToString());
         }
-
-
-
-
 
 
         public JsonResult GetWeather()
@@ -40,11 +44,6 @@ namespace Desáfio_Pokémon.Controllers
             return Json(weath.getWeatherForcast(), new Newtonsoft.Json.JsonSerializerSettings());
 
         }
-
-
-
-
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

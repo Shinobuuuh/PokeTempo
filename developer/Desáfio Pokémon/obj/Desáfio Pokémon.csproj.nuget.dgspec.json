@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\pokemon-challenge\\developer\\Desáfio Pokémon\\Desáfio Pokémon.csproj": {}
+    "C:\\Projetos\\TESTES E EXERCICIOS\\Murillim\\pokemon-challenge\\developer\\Desáfio Pokémon\\Desáfio Pokémon.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\pokemon-challenge\\developer\\Desáfio Pokémon\\Desáfio Pokémon.csproj": {
+    "C:\\Projetos\\TESTES E EXERCICIOS\\Murillim\\pokemon-challenge\\developer\\Desáfio Pokémon\\Desáfio Pokémon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\pokemon-challenge\\developer\\Desáfio Pokémon\\Desáfio Pokémon.csproj",
+        "projectUniqueName": "C:\\Projetos\\TESTES E EXERCICIOS\\Murillim\\pokemon-challenge\\developer\\Desáfio Pokémon\\Desáfio Pokémon.csproj",
         "projectName": "Desáfio Pokémon",
-        "projectPath": "D:\\Projetos\\pokemon-challenge\\developer\\Desáfio Pokémon\\Desáfio Pokémon.csproj",
-        "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\pokemon-challenge\\developer\\Desáfio Pokémon\\obj\\",
+        "projectPath": "C:\\Projetos\\TESTES E EXERCICIOS\\Murillim\\pokemon-challenge\\developer\\Desáfio Pokémon\\Desáfio Pokémon.csproj",
+        "packagesPath": "C:\\Users\\luann.amaral\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\TESTES E EXERCICIOS\\Murillim\\pokemon-challenge\\developer\\Desáfio Pokémon\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luann.amaral\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
