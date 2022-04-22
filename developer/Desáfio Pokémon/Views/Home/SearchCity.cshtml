@@ -18,3 +18,19 @@
           </div>
         </fieldset>
       </form>
+
+
+@*@{
+    var message = ViewBag.Error != null ? ViewBag.Error : "";
+}
+
+      <script> 
+
+
+      
+          $("document").ready(function(){ 
+              console.log('@message')
+          });
+
+      </script>
+*@

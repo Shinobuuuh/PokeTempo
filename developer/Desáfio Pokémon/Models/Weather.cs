@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Desáfio_Pokémon.Models
 {
-class Weather
+/*class Weather
     {
         public Object getWeatherForcast()
         {
@@ -24,5 +24,5 @@ class Weather
             return jsonContent;
         }
 
-    }
+    }*/
 }

@@ -1,4 +1,4 @@
-﻿{
+﻿@{
     ViewData["Title"] = "Home Page";
 }
 <div class="text-center">
@@ -13,35 +13,4 @@
 <a href="@Url.Action("SearchCity","Home")" class="h-50">
     <input type="submit" id="size-btn-start" class="btn style-btn-background offset-4 col-4" value="S T A R T "/>
 </a>
-@*
-*@
 
-@*
-
-
-@{
-    ViewBag.Title = "Weather Or Not";
-}
-
-<h2>WeatherJS</h2>
-<div class="col-md-12">
-    <h1>Current Conditions in <span data-bind="text:name"></span></h1>
-</div>
-
-<div class="col-md-12">
-    Temperature is <span data-bind="text:main.temp"></span>&deg; C
-</div>
-
-<script>
-    var weather = Object();
-    $(document).ready(function () {
-            $.get("@Url.Action("GetWeather", "Home")", function (response) {
-                //response
-                console.log(response);
-                weather = ko.mapping.fromJS(response);  //populate the weather object
-                ko.applyBindings(weather);
-
-            });
-    });
-
-</script>*@

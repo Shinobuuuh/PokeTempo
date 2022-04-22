@@ -38,7 +38,5 @@ namespace Desáfio_Pokémon.Models.Pesquisa
             return json;
         }
 
-
-
     }
 }

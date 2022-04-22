@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\Weather.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
