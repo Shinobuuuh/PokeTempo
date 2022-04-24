@@ -18,75 +18,84 @@ namespace Desáfio_Pokémon.Controllers
         public IActionResult Index()
         {
             return View();
-        }   
+        }
 
         public IActionResult SearchCity()
         {
             return View();
         }
 
-        public IActionResult Obter(string city)
+        public ViewResult Obter(string city)
         {
-
             string poketipo = "";
-
-            var api = new ApiTempo();
-            var resposta = api.getTemp(city);
-
-
-
-            /*            try
-                        {
-                            return View(@"\Views\Home\Obter.cshtml", resposta.main.temp.ToString());
-                        }
-                        catch (Exception ex)
-                        {
-                            return View(@"\Views\Home\SearchCity.cshtml", ex.Message);
-                        }
-            */
-
-
-            
-            
+            ApiTempo api = new ApiTempo();
+            dynamic resposta = api.getTemp(city);
 
             string strPegaProvisorio = resposta.main.temp.ToString();
-
             double provisorioDouble = Convert.ToDouble(strPegaProvisorio);
-
-
             var qtipo = provisorioDouble;
 
-            
-            // PRECISO CONVERTER A TEMP PARA INT MAS TA DANDO ERRO PQ O INT32.PARSE SÓ ACEITA INTEIRO
+            string chuva = resposta.weather[0].main.ToString();
 
-            switch (qtipo)
+            if (chuva == "Rain")
             {
-                case < 12: poketipo = "13";
-                    break;
-                case >= 12: poketipo = "17";
-                    break;
+                poketipo = "13";
+            }
+            else
+            {
+                switch (qtipo)
+                {
+                    case > 33:
+                        poketipo = "9";
+                        break;
+
+                    case 33:
+                        poketipo = "1";
+                        break;
+
+                    case >= 27:
+                        poketipo = "6";
+                        break;
+                    case >= 23:
+                        poketipo = "7";
+                        break;
+                    case >= 21:
+                        poketipo = "1";
+                        break;
+                    case >= 15:
+                        poketipo = "5";
+                        break;
+                    case >= 12:
+                        poketipo = "12";
+                        break;
+                    case >= 10:
+                        poketipo = "1";
+                        break;
+                    case >= 5:
+                        poketipo = "11";
+                        break;
+                    case < 5:
+                        poketipo = "15";
+                        break;
+                }
 
             }
 
+            ApiPokemon pokeApi = new ApiPokemon(poketipo);
+            dynamic restipo = pokeApi.getType();
+            string respostaPoke = "";
 
+            Int64 posicao = new Random().NextInt64(restipo.pokemon.Count);
 
-            var pokeApi = new ApiPokemon(poketipo);
-            var restipo = pokeApi.getType();            
-            
-            var respostaPoke = string.Empty;
+            Int32 posicaoFinal = Int32.Parse(posicao.ToString());
 
-            var posicao = new Random().NextInt64(restipo.pokemon.Count);
-
-            var pokemon = restipo.pokemon[Int32.Parse(posicao.ToString())].pokemon;
+            dynamic pokemon = restipo.pokemon[posicaoFinal].pokemon;
 
             respostaPoke = pokemon.name.ToString();
 
-            return View(@"\Views\Home\Obter.cshtml", respostaPoke);
+            ViewBag.nomePokemon = respostaPoke;           
 
-
-
-
-
+            return View(@"\Views\Home\Obter.cshtml");
         }
 
 

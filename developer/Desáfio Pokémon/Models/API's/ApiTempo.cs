@@ -33,8 +33,7 @@ namespace Desáfio_Pokémon.Models.Pesquisa
             catch(Exception ex)
             {
                 return ex.Message;
-            }
-           
+            }           
             return json;
         }
 

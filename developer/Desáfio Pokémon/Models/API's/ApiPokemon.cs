@@ -14,16 +14,17 @@ namespace Desáfio_Pokémon.Models.API_s
         }
 
         public dynamic getType()
-        {            
+        {
             string result = " ";
             dynamic json;
 
-
             try
             {
+
+                //var client tipo WebClient será utilizada somente aqui
                 using (WebClient client = new WebClient())
                 {
-                    var url = "https://pokeapi.co/api/v2/type/" + this.poketipo/* PRECISO VER COMO PEGAR O RESULTADO LA DE QTIPO DO HOMECONTROLLER PRA CA */ ;
+                    var url = "https://pokeapi.co/api/v2/type/" + this.poketipo;
 
                     result = client.DownloadString(url);
 
