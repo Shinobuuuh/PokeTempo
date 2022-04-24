@@ -27,24 +27,50 @@ namespace Desáfio_Pokémon.Controllers
 
         public IActionResult Obter(string city)
         {
+
+            string poketipo = "";
+
             var api = new ApiTempo();
             var resposta = api.getTemp(city);
 
 
 
-            /*   try
-               {
-                   return View(@"\Views\Home\Obter.cshtml", resposta.main.temp.ToString());
-               }
-               catch(Exception ex)
-               {
-                   return View(@"\Views\Home\SearchCity.cshtml", ex.Message);
-               }*/
+            /*            try
+                        {
+                            return View(@"\Views\Home\Obter.cshtml", resposta.main.temp.ToString());
+                        }
+                        catch (Exception ex)
+                        {
+                            return View(@"\Views\Home\SearchCity.cshtml", ex.Message);
+                        }
+            */
+
 
             
+            
+
+            string strPegaProvisorio = resposta.main.temp.ToString();
+
+            double provisorioDouble = Convert.ToDouble(strPegaProvisorio);
 
 
-            var pokeApi = new ApiPokemon();
+            var qtipo = provisorioDouble;
+
+            
+            // PRECISO CONVERTER A TEMP PARA INT MAS TA DANDO ERRO PQ O INT32.PARSE SÓ ACEITA INTEIRO
+
+            switch (qtipo)
+            {
+                case < 12: poketipo = "13";
+                    break;
+                case >= 12: poketipo = "17";
+                    break;
+
+            }
+
+
+
+            var pokeApi = new ApiPokemon(poketipo);
             var restipo = pokeApi.getType();            
             
             var respostaPoke = string.Empty;
