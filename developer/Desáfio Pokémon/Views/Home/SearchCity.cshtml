@@ -3,34 +3,26 @@
 *@
 @{
 }
-<form action="@Url.Action("Obter","Home")">
+
+
+<div class="text-center">
+
+    <form class="borda-window-poke window-poke" action="@Url.Action("Obter","Home")">
         <fieldset>
-          <legend>Pesquisa Pokémon</legend>
-          <div>
-            <label for="city">Qual sua Cidade?</label>
-            <input type="text" name="city" placeholder="Cidade" />
-          </div>
-          <div>
-            <label>&nbsp;</label>
-            
-            <input type="submit" value="Enviar" class="submit"/>
-            
-          </div>
+            <h4 class="titles">Vamos pesquisar uma cidade!</h4>
+            <br />
+            <div>
+                <input class="campo" type="text" name="city" placeholder="Digite o nome da Cidade" autocomplete="off" spellcheck="false" />
+            </div>
+            <br />
+            <br />
+            <div>
+                <label>&nbsp;</label>
+
+                <input id="btn-pesquisa-city" type="submit" value="Procurar pokémon" />
+
+            </div>
         </fieldset>
-      </form>
+    </form>
 
-
-@*@{
-    var message = ViewBag.Error != null ? ViewBag.Error : "";
-}
-
-      <script> 
-
-
-      
-          $("document").ready(function(){ 
-              console.log('@message')
-          });
-
-      </script>
-*@
+</div>

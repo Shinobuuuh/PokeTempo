@@ -1,28 +1,131 @@
+@font-face {
+    font-family: 'pixel16-font';
+    src: url('../fontes/Minecraft.ttf');
+}
+
+.pixel16-font {
+    font-family: pixel16-font;
+}
+
+@font-face {
+    font-family: 'pixel21-font';
+    src: url('../fontes/VCR_OSD_MONO_1.001.ttf');
+}
+
+.pixel21-font {
+    font-family: pixel21-font;
+}
+
+@font-face {
+    font-family: 'Broken Console Bold';
+    src: url('../fontes/Broken Console Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Broken Console Bold Shadow';
+    src: url('../fontes/Broken Console Bold Shadow.ttf');
+}
+
+.broken-console-bold-shadow {
+    font-family: 'Broken Console Bold Shadow';
+}
+
+
+
+
+
+
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
     margin-top: 0%;
     margin-bottom: 60px;
+    font-family: 'Broken Console Bold';
 }
 
 .background-fundo {
     background-image: url(../images/Background_1.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: auto;
+}
+
+.pikachu-running {
+    background: url(../images/pikachuRunning.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+#btn-pesquisa-city {
+    background-color: #F5E262;
+    border-radius: 1em;
+    border-color: #efe50de6;
+    padding: 2%;
+    text-align: center;
+    color: #B27FEB;
+    font-family: pixel21-font;
+}
+
+.campo {
+    border-radius: 1em;
+    background-color: #35363a;
+    color: lightgray;
+    width: 80%;
+    font-family: Arial;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: unset;
+    outline: 2px outset;
+    outline-color: #35363a;
+}
+
+.borda-window-poke {
+    border: 0.2em double;
+    border-color: #d8d3d3;
+    border-radius: 1em;
+}
+
+
+.window-poke {
+    text-align: center;
+    background-color: #8519e47f;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+    padding: 2em;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+    elevation: higher;
+}
+
+.titles {
+    font-size: 400%;
+    color: #F5E262;
+    font-style: normal;
+}
+
+.answer{
+    color: #ffffff;
 }
 
 
@@ -33,13 +136,18 @@ body {
 }
 
 #size-btn-start {
-    height: 2em;
+    height: auto;
+    width: auto;
     color: #ffffff;
     text-align: center;
     font-size: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
 }
 
-.p-6{
+.p-6 {
     padding-top: 6em;
 }
 
@@ -62,8 +170,6 @@ header {
     top: 0;
     left: 0;
     background-color: #0ebbc100;
-
-    
 }
 
 footer {

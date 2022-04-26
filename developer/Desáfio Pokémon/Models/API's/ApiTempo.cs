@@ -13,7 +13,7 @@ namespace Desáfio_Pokémon.Models.Pesquisa
 {
     public class ApiTempo
     {
-        public dynamic getTemp(string campoPesquisa)
+        public dynamic getTempo(string campoPesquisa)
         {
             string appid = "14e8cc4f572cda2940a964a98c5b4994";
             string result = " ";
@@ -23,9 +23,7 @@ namespace Desáfio_Pokémon.Models.Pesquisa
             {
                 using (WebClient client = new WebClient())
                 {
-                    var url = "http://api.openweathermap.org/data/2.5/weather?q=" + campoPesquisa + "&appid=" + appid + "&units=metric";
-
-                    result = client.DownloadString(url);
+                    result = client.DownloadString("http://api.openweathermap.org/data/2.5/weather?q=" + campoPesquisa + "&appid=" + appid + "&units=metric");
 
                     json = JsonConvert.DeserializeObject(result);
                 }

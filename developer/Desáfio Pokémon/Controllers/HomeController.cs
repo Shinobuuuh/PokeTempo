@@ -21,82 +21,106 @@ namespace Desáfio_Pokémon.Controllers
         }
 
         public IActionResult SearchCity()
-        {
+        {   
             return View();
         }
 
         public ViewResult Obter(string city)
         {
-            string poketipo = "";
-            ApiTempo api = new ApiTempo();
-            dynamic resposta = api.getTemp(city);
-
-            string strPegaProvisorio = resposta.main.temp.ToString();
-            double provisorioDouble = Convert.ToDouble(strPegaProvisorio);
-            var qtipo = provisorioDouble;
-
-            string chuva = resposta.weather[0].main.ToString();
-
-            if (chuva == "Rain")
+            try
             {
-                poketipo = "13";
-            }
-            else
-            {
-                switch (qtipo)
+                string poketipo = "";
+                ApiTempo api = new ApiTempo();
+                dynamic resposta = api.getTempo(city);
+
+                string strPegaTemp = resposta.main.temp.ToString();
+
+                double qtipo = Convert.ToDouble(strPegaTemp);
+
+                string chuva = resposta.weather[0].main.ToString();
+
+                if (chuva == "Rain")
                 {
-                    case > 33:
-                        poketipo = "9";
-                        break;
+                    poketipo = "13";
 
-                    case 33:
-                        poketipo = "1";
-                        break;
+                    chuva = "está chovendo";
 
-                    case >= 27:
-                        poketipo = "6";
-                        break;
-                    case >= 23:
-                        poketipo = "7";
-                        break;
-                    case >= 21:
-                        poketipo = "1";
-                        break;
-                    case >= 15:
-                        poketipo = "5";
-                        break;
-                    case >= 12:
-                        poketipo = "12";
-                        break;
-                    case >= 10:
-                        poketipo = "1";
-                        break;
-                    case >= 5:
-                        poketipo = "11";
-                        break;
-                    case < 5:
-                        poketipo = "15";
-                        break;
+                }
+                else
+                {
+                    chuva = "não está chovendo";
+
+                    switch (qtipo)
+                    {
+                        case > 33:
+                            poketipo = "9";
+                            break;
+
+                        case 33:
+                            poketipo = "1";
+                            break;
+
+                        case >= 27:
+                            poketipo = "6";
+                            break;
+                        case >= 23:
+                            poketipo = "7";
+                            break;
+                        case >= 21:
+                            poketipo = "1";
+                            break;
+                        case >= 15:
+                            poketipo = "5";
+                            break;
+                        case >= 12:
+                            poketipo = "12";
+                            break;
+                        case >= 10:
+                            poketipo = "1";
+                            break;
+                        case >= 5:
+                            poketipo = "11";
+                            break;
+                        case < 5:
+                            poketipo = "15";
+                            break;
+                    }
+
                 }
 
+                ApiPokemon pokeApi = new ApiPokemon();
+                dynamic restipo = pokeApi.getType(poketipo);
+                string respostaPoke = "";
+
+
+                dynamic pokemon = restipo.pokemon[Int32.Parse(new Random().NextInt64(restipo.pokemon.Count).ToString())].pokemon;
+
+                respostaPoke = pokemon.name.ToString();
+
+                dynamic resImgPoke = pokeApi.getPoke(respostaPoke);
+
+                
+
+                string imgUrl = resImgPoke.sprites.other.home.front_default.ToString();
+
+                ViewBag.nomePokemon = respostaPoke.Replace('-', ' ');
+                ViewBag.tempCity = strPegaTemp + " °C";
+                ViewBag.taChovendo = chuva;
+                ViewBag.nameCity = city;
+                ViewBag.imagePoke = imgUrl;
+
+                return View(@"\Views\Home\Obter.cshtml");
+
             }
+            catch(Exception){
 
-            ApiPokemon pokeApi = new ApiPokemon(poketipo);
-            dynamic restipo = pokeApi.getType();
-            string respostaPoke = "";
+                return View(@"\Views\Home\SearchCity.cshtml");
 
-            Int64 posicao = new Random().NextInt64(restipo.pokemon.Count);
+                }
 
-            Int32 posicaoFinal = Int32.Parse(posicao.ToString());
 
-            dynamic pokemon = restipo.pokemon[posicaoFinal].pokemon;
 
-            respostaPoke = pokemon.name.ToString();
-
-            ViewBag.nomePokemon = respostaPoke;           
-
-            return View(@"\Views\Home\Obter.cshtml");
-        }
+            }
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
