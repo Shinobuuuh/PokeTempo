@@ -36,8 +36,7 @@ namespace Desáfio_Pokémon.Models.API_s
             dynamic json;
 
             try
-            {
-                //var client tipo WebClient será utilizada somente aqui
+            {                
                 using (WebClient client = new WebClient())
                 {
                     result = client.DownloadString("https://pokeapi.co/api/v2/pokemon/" + respostapoke);

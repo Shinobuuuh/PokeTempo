@@ -1,10 +1,143 @@
 ﻿<div class="borda-window-poke window-poke">
+       
+    <p>A temperatura atual em @ViewBag.nameCity é @ViewBag.tempCity, e atualmente @ViewBag.taChovendo</p>
+
+    <p>Um dos pokémons que pode aparecer em @ViewBag.nameCity é o @ViewBag.nomePokemon</p>
+
+    @if (ViewBag.pokeDif == "true")
+    {
+        <p>O @ViewBag.nomePokemon é um variante do @ViewBag.nomePokedex</p>
+
+
+        <div class="row">
+
+            <div class="offset-2 col-3">
+
+                <div class="poke-card">
+
+
+                    <div class="row">
+                        <div class="col">
+                            <img class="img-size" src="@ViewBag.imagePoke" />
+                        </div>
+
+                    </div>
+                    <br /><br />
+
+                    <div class="row n-pokedex">
+                        <div class="col">
+                            N°@ViewBag.nPokedex
+                        </div>
+                    </div>
+
+                    <div class="row name-poke">
+                        <div class="col">
+                            @ViewBag.nomePokemon
+                        </div>
+                        <br /><br />
+
+                    </div>
+
+                    <div class="row type-poke">
+                        <div class="col">
+                            @ViewBag.tipoPokemon
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="offset-2 col-3">
+
+
+                <div class="poke-card">
+
+
+                    <div class="row">
+                        <div class="col">
+                            <img class="img-size" src="@ViewBag.imagePokedex" />
+                        </div>
+
+                    </div>
+                    <br /><br />
+
+                    <div class="row n-pokedex">
+                        <div class="col">
+                            N°@ViewBag.nPokedex
+                        </div>
+                    </div>
+
+                    <div class="row name-poke">
+                        <div class="col">
+                            @ViewBag.nomePokedex
+                        </div>
+                        <br /><br />
+                    </div>
+
+                    <div class="row type-poke">
+                        <div class="col">
+                            @ViewBag.tipoPokedex
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    }
+    else
+    {
+
+
+        <div class="offset-4 col-4">
+
+            <div class="poke-card">
+
+                    <br />
+
+                <div class="row">
+                    <div class="col">
+                        <img class="img-size" src="@ViewBag.imagePoke" />
+                    </div>
+
+                </div>                                                       
+                    <br /><br />
+                    <br /><br />
+
+                <div class="row n-pokedex">
+                    <div class="col">
+                        N° @ViewBag.nPokedex
+                    </div>
+                </div>
+
+                <div class="row name-poke">
+                    <div class="col">
+                        @ViewBag.nomePokemon
+                    </div>
+                    <br /><br />
+                    <br /><br />
+                </div>
+                <div class="row type-poke">
+                    <div class="col">
+                        @ViewBag.tipoPokemon
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    }
+
+ 
+
     
-      <p class="answer">A temperatura atual em @ViewBag.nameCity é @ViewBag.tempCity, e atualmente @ViewBag.taChovendo</p>
 
-      <p>Um dos pokémons que pode aparecer em @ViewBag.nameCity é o @ViewBag.nomePokemon</p>
+</div>
 
 
-      <img src="@ViewBag.imagePoke"/> 
-
-</div>  

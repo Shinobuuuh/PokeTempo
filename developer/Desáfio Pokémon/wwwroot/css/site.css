@@ -3,17 +3,9 @@
     src: url('../fontes/Minecraft.ttf');
 }
 
-.pixel16-font {
-    font-family: pixel16-font;
-}
-
 @font-face {
     font-family: 'pixel21-font';
     src: url('../fontes/VCR_OSD_MONO_1.001.ttf');
-}
-
-.pixel21-font {
-    font-family: pixel21-font;
 }
 
 @font-face {
@@ -26,27 +18,8 @@
     src: url('../fontes/Broken Console Bold Shadow.ttf');
 }
 
-.broken-console-bold-shadow {
-    font-family: 'Broken Console Bold Shadow';
-}
-
-
-
-
-
-
-
 html {
     font-size: 14px;
-}
-
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-html {
     position: relative;
     min-height: 100%;
 }
@@ -57,18 +30,28 @@ body {
     font-family: 'Broken Console Bold';
 }
 
-.background-fundo {
-    background-image: url(../images/Background_1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
+header {
+    width: 100%;
+    height: 6%;
+    position: absolute;    
+    padding: 2em;
+    background-color: #0ebbc100;
 }
 
-.pikachu-running {
-    background: url(../images/pikachuRunning.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70%;
+footer {
+    background: #00ffff00;
+    width: 100%;
+    height: 11%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: unset;
+    outline: 2px outset;
+    outline-color: #35363a;
 }
 
 #btn-pesquisa-city {
@@ -79,60 +62,6 @@ body {
     text-align: center;
     color: #B27FEB;
     font-family: pixel21-font;
-}
-
-.campo {
-    border-radius: 1em;
-    background-color: #35363a;
-    color: lightgray;
-    width: 80%;
-    font-family: Arial;
-}
-
-textarea:focus, input:focus, select:focus {
-    box-shadow: 0 0 0 0;
-    border: unset;
-    outline: 2px outset;
-    outline-color: #35363a;
-}
-
-.borda-window-poke {
-    border: 0.2em double;
-    border-color: #d8d3d3;
-    border-radius: 1em;
-}
-
-
-.window-poke {
-    text-align: center;
-    background-color: #8519e47f;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: auto;
-    width: auto;
-    padding: 2em;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1em;
-    elevation: higher;
-}
-
-.titles {
-    font-size: 400%;
-    color: #F5E262;
-    font-style: normal;
-}
-
-.answer{
-    color: #ffffff;
-}
-
-
-.style-btn-background {
-    background-color: #f33535d9;
-    border: none;
-    border-radius: 2em;
 }
 
 #size-btn-start {
@@ -147,41 +76,104 @@ textarea:focus, input:focus, select:focus {
     padding-bottom: 0.3em;
 }
 
+.background-fundo {
+    background-image: url(../images/Background_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.pikachu-running {
+    background: url(../images/pikachuRunning.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    max-height: 100%;
+    background-size: 6.5%;
+}
+
+.campo {
+    border-radius: 1em;
+    background-color: #35363a;
+    color: lightgray;
+    width: 80%;
+    font-family: Arial;
+}
+
+.borda-window-poke {
+    border: 0.2em double;
+    border-color: #d8d3d3;
+    border-radius: 1em;
+    color: #F5E262;
+}
+
+.window-poke {
+    text-align: center;
+    background-color: #8519e47f;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+    padding: 2em;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+    elevation: higher;
+}
+
+.titles {
+    font-size: 400%;
+    color: #F5E262;
+    font-style: normal;
+}
+
+.style-btn-background {
+    background-color: #f33535d9;
+    border: none;
+    border-radius: 2em;
+}
+
 .p-6 {
     padding-top: 6em;
 }
 
-/*div{
-
+.img-size {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
 }
 
-#nome-id{
-
+.poke-card {
+    background-image: url(../images/pokeball.png);
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: 150%;
+    border-color: black;
+    border-radius: 2em;
+    background-color: #f2f2f2;
+    background-position: center;
+    padding: 0.5em;
+    width: auto;
+    height: auto;
+    border-collapse: separate;
+    border: double #ccc 10px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
 }
 
-.nome-da-classe{
-
-}*/
-
-header {
-    width: 100%;
-    height: 6%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #0ebbc100;
+.name-poke {
+    text-align: left;
+    color: #313131
 }
 
-footer {
-    background: #00ffff00;
-    width: 100%;
-    height: 4%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.n-pokedex {
+    text-align: left;
+    color: #919191;
 }
 
-/*background-image: url(../images/pikachuRunning.gif);
-background-repeat: no-repeat;
-background-size: 4%;
-background-position: right;*/
+.type-poke {
+    color: #919191;
+}
+
+

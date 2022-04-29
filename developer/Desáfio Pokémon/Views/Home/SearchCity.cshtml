@@ -5,24 +5,53 @@
 }
 
 
-<div class="text-center">
+@if (ViewBag.invalido == "false")
+{
+    <div class="text-center">
 
-    <form class="borda-window-poke window-poke" action="@Url.Action("Obter","Home")">
-        <fieldset>
-            <h4 class="titles">Vamos pesquisar uma cidade!</h4>
-            <br />
-            <div>
-                <input class="campo" type="text" name="city" placeholder="Digite o nome da Cidade" autocomplete="off" spellcheck="false" />
-            </div>
-            <br />
-            <br />
-            <div>
-                <label>&nbsp;</label>
+        <form class="borda-window-poke window-poke" action="@Url.Action("Obter","Home")">
+            <fieldset>
+                <h4 class="titles">Oops! Tive um problema com a Pokédex, tente pesquisar novamente uma cidade.</h4>
+                <br />
+                <div>
+                    <input class="campo" type="text" name="city" placeholder="Digite o nome da Cidade" autocomplete="off" spellcheck="false" />
+                </div>
+                <br />
+                <br />
+                <div>
+                    <label>&nbsp;</label>
 
-                <input id="btn-pesquisa-city" type="submit" value="Procurar pokémon" />
+                    <input id="btn-pesquisa-city" type="submit" value="Procurar pokémon" />
 
-            </div>
-        </fieldset>
-    </form>
+                </div>
+            </fieldset>
+        </form>
 
-</div>
+    </div>
+}
+else
+{
+
+    <div class="text-center">
+
+        <form class="borda-window-poke window-poke" action="@Url.Action("Obter","Home")">
+            <fieldset>
+                <h4 class="titles">Vamos pesquisar uma cidade!</h4>
+                <br />
+                <div>
+                    <input class="campo" type="text" name="city" placeholder="Digite o nome da Cidade" autocomplete="off" spellcheck="false" />
+                </div>
+                <br />
+                <br />
+                <div>
+                    <label>&nbsp;</label>
+
+                    <input id="btn-pesquisa-city" type="submit" value="Procurar pokémon" />
+
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+}
+
